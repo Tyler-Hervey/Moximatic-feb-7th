@@ -22,6 +22,11 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    animation: glitch 3s steps(100) infinite;
+  }
+
+  .head-m{
+    animation: glitch-2 3s steps(100) infinite;
   }
 
     &--sub{
@@ -34,19 +39,27 @@ body {
 }
 
 .heading-secondary{
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   display: inline-block;
   background-image: linear-gradient(to right,$color-primary-light, $color-primary-dark);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
-  transition: all .2s;
+    font-size: 4rem;
 
-  &:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  &--main{
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+  }
+
+    &--sub{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+
   }
 }
 
