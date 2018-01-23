@@ -51,3 +51,19 @@
     padding: 6rem;
   }
 }
+
+.services-tabs {
+  .content-tab{
+    background: linear-gradient(225deg, #0AF 0%, #03F 100%);
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+
+    p{
+      font-size: $default-font-size;
+      font-weight: 100;
+      color: $color-white;
+      letter-spacing: .5px;
+
+    }
+  }
+}

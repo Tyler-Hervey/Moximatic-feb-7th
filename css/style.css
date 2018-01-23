@@ -632,6 +632,32 @@ body {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+ul.tabs li {
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px 15px;
+  cursor: pointer; }
+
+ul.tabs li.current {
+  color: #FFF;
+  border-color: #fff; }
+
+.tab-content {
+  display: none;
+  background: #ededed;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.07), 0 2px 8px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.05); }
+
+.tab-content.current {
+  display: inherit; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/computer-coffee.jpg);
@@ -697,3 +723,13 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem; }
+
+.services-tabs .content-tab {
+  background: linear-gradient(225deg, #0AF 0%, #03F 100%);
+  padding-top: 12rem;
+  padding-bottom: 12rem; }
+  .services-tabs .content-tab p {
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: .5px; }
